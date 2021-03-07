@@ -1,0 +1,157 @@
+
+            <!doctype html>
+            <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Netify application lists for Pi-hole - Category: mail">
+
+                <title>Netify Application Lists for Pi-hole: mail</title>
+
+                <link rel="shortcut icon" type="image/ico" sizes="16x16 32x32 48x48 64x64" href="/pi-hole-lists/favicon.ico" />
+                <link rel="icon" type="image/png" sizes="152x152" href="/pi-hole-lists/images/logo-touch.png" />
+                <link rel="stylesheet" href="https://www.netify.ai/css/all.min.css?ver=2021.01.04">
+            </head>
+
+            <body class="header-shadow">
+
+                <!-- ========== LOADER ========== -->
+                <div class="page-loader">
+                    <div class="spinner"></div>
+                </div>
+
+                <!-- ========== HEADER ========== -->
+                <div class="header menu-style-1 ">
+                    <div class="container">
+                        <nav class="menu">
+                            <div class="logo netify-header-container">
+                                <a href="/pi-hole-lists"><img src="https://www.netify.ai/images/netify-dark.svg" alt="Netify" class="logo-img"></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- ========== START MAIN ========== -->
+                <div class="main">
+                    <br><br>
+                    <br><br>
+                    <div class="text-center">
+                        <p>The following are application lists for the <a class="link-external" href="https://pi-hole.net">Pi-hole</a>.<br>
+                        For more information, please visit the <a class="link-internal" href="/pi-hole-lists">home page</a>.</p>
+                    </div>
+                    <h2 class="text-center">Category: Mail</h2>
+
+                    <div style="padding: 50px">
+                        <table id="applications" class="display table table-striped">
+                            <thead>
+                                <tr>
+                                    <th data-priority="1">Application</th>
+                                    <th data-priority="3">Description</th>
+                                    <th data-priority="2" width="30">Pi-hole Regex</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+            
+            <tr>
+                <td>Gmail</td>
+                <td>
+                    <div style="float: left; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto">
+                        <img src="https://static.netify.ai/logos/g/m/a/gmail/icon.png?v=3" class="img-responsive" style="padding-right: 10px; max-height: 40px" alt="Gmail">
+                    </div>
+                    <div style="padding-right: 20px">
+                        <p>Gmail is a free and popular mail service provided by Google.  The service provides a webmail interface as well as native IMAP/POP access for mobile and desktop mail clients.
+                        <a style="font-weight: normal" href="https://www.netify.ai/resources/applications/gmail" class="link-internal">More on netify.ai »</a></p>
+                    </div>
+                </td>
+                <td style="width: 40%"><pre style="font-size: 0.8rem">(\.|^)gm1\.ggpht\.com$
+(\.|^)gmail-smtp-in\.l\.google\.com$
+(\.|^)gmail\.com$
+(\.|^)googlemail\.com$
+(\.|^)googlemail\.l\.google\.com$
+(\.|^)mail\.google\.com$
+(\.|^)mobile-mail\.google\.com$
+</pre></td>
+            </tr>
+            <tr>
+                <td>Hushmail</td>
+                <td>
+                    <div style="float: left; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto">
+                        <img src="https://static.netify.ai/logos/h/u/s/hushmail/icon.ico?v=1" class="img-responsive" style="padding-right: 10px; max-height: 40px" alt="Hushmail">
+                    </div>
+                    <div style="padding-right: 20px">
+                        <p>Hushmail is a secure email service that lets you send and receive private, encrypted emails and attachments to and from anyone.
+                        <a style="font-weight: normal" href="https://www.netify.ai/resources/applications/hushmail" class="link-internal">More on netify.ai »</a></p>
+                    </div>
+                </td>
+                <td style="width: 40%"><pre style="font-size: 0.8rem">(\.|^)hushmail\.com$
+</pre></td>
+            </tr>
+            <tr>
+                <td>Outlook</td>
+                <td>
+                    <div style="float: left; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto">
+                        <img src="https://static.netify.ai/defaults/alpha/o/favicon-32x32.png" class="img-responsive" style="padding-right: 10px; max-height: 40px" alt="Outlook">
+                    </div>
+                    <div style="padding-right: 20px">
+                        <p>Outlook.com is a web-based suite of webmail, contacts, tasks, and calendaring services from Microsoft.
+                        <a style="font-weight: normal" href="https://www.netify.ai/resources/applications/outlook" class="link-internal">More on netify.ai »</a></p>
+                    </div>
+                </td>
+                <td style="width: 40%"><pre style="font-size: 0.8rem">(\.|^)acompli\.net$
+(\.|^)baydin\.com$
+(\.|^)hotmail\.com$
+(\.|^)live\.com\.akadns\.net$
+(\.|^)olsvc\.com$
+(\.|^)outlook\.com$
+(\.|^)outlook\.live\.com$
+(\.|^)outlook\.live\.net$
+</pre></td>
+            </tr>
+            <tr>
+                <td>Yahoo Mail</td>
+                <td>
+                    <div style="float: left; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto">
+                        <img src="https://static.netify.ai/logos/y/a/h/yahoo-mail/icon.png?v=1" class="img-responsive" style="padding-right: 10px; max-height: 40px" alt="Yahoo Mail">
+                    </div>
+                    <div style="padding-right: 20px">
+                        <p>Yahoo Mail is one of the world's largest web-based email service providers.
+                        <a style="font-weight: normal" href="https://www.netify.ai/resources/applications/yahoo-mail" class="link-internal">More on netify.ai »</a></p>
+                    </div>
+                </td>
+                <td style="width: 40%"><pre style="font-size: 0.8rem">(\.|^)mail\.yahoo\.com$
+</pre></td>
+            </tr>
+                </tbody>
+                </table>
+            </div>
+        <div class="affix-bottom"></div>
+    </div>
+
+    <footer class="footer dark-footer" id="footer">
+        <div class="footer-last">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">&copy; 2021 Netify - eGloo</div>
+                    <div class="col-md-6 text-right"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.netify.ai/js/jquery-2.2.4.js?ver=7yBArc6H5qeXaryq"></script>
+    <script src="https://www.netify.ai/js/all.min.js?ver=2021.01.04"></script>
+    <script>
+        $("#applications").DataTable( {
+            pageLength: 5000,
+            responsive: false,
+            paging: false,
+            info: false,
+            orderFixed: [ 0, "asc" ],
+            order: [[ 0, "asc" ]],
+            renderer: "bootstrap",
+            searching: true,
+        });
+    </script>
+</body>
+        

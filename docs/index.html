@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netify application lists for Pi-hole">
+
+    <title>Netify Application Lists for Pi-hole</title>
+
+    <link rel="shortcut icon" type="image/ico" sizes="16x16 32x32 48x48 64x64" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="152x152" href="/images/logo-touch.png" />
+    <link rel="stylesheet" href="https://www.netify.ai/css/all.min.css?ver=2021.01.04">
+</head>
+
+<body class="header-shadow">
+
+    <!-- ========== LOADER ========== -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <div class="header menu-style-1 ">
+        <div class="container">
+            <nav class="menu">
+                <div class="logo netify-header-container">
+                    <a href="/"><img src="https://www.netify.ai/images/netify-dark.svg" alt="Netify" class="logo-img"></a>
+                </div>
+            </nav>
+<div>
+Application Lists for Pi-Hole
+</div>
+        </div>
+    </div>
+
+    <!-- ========== START MAIN ========== -->
+    <div class="main">
+
+        <section class="content-section">
+        <div class="container">
+            <div class="row tab-style-10">
+                <br>
+                    <div class="col-sm-9 col-sm-push-3">
+
+<!-- ========== CONTENT SECTION ========== -->
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="underline">Netify Applications Lists for Pi-hole</h3>
+            <p>
+                Are you a Pi-hole user looking to whitelist or blacklist a particular application like TikTok, SnapChat, etc?
+                If so, read on.
+            </p>
+
+            <h4>What is an Application?</h4>
+            <p>
+                Basically, an application is a defined grouping of base domains.  To give you an example, let's start 
+                with a small sample of hostnames used by TikTok:
+            </p>
+            <ul class="feature-desc default-ul indent-2">
+                <li>pull-rtmp-l1-va01.<b>tiktokcdn.com</b></li>
+                <li>hotapi-va.<b>tiktokv.com</b></li>
+                <li><b>tiktok.bytedance.map.fastly.net</b></li>
+            </ul>
+            <p>
+                The bolded part of the hostname is part of the TikTok application definition.  So any hostname
+                matching <i>ANYTHING</i>.tiktokcdn.com is consider part of TikTok.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/applications.png" class="img-responsive center-block" style="max-height: 400px" alt="Pi-hole Applications" />
+        </div>
+    </div>
+
+    <h3 class="underline">Application Lists</h3>
+    <p>
+        You can find the application lists organized by category in the adjacenct menu.
+        You can also get the whole list by clicking on the <a class="link-internal" href="all.html">Everything link</a>.
+    </p>
+
+    <h3 class="underline">Getting Started</h3>
+    <p>
+        A Pi-hole application list uses the <a class="link-external" href="https://docs.pi-hole.net/regex/overview/">Regex</a>
+        feature.  At this time, these definitions cannot be loaded via the Adlists feature.
+        To get started, take a look at the application for Twitter below:
+    </p>
+
+    <hr>
+
+    <div class="row" style="padding-left:50px">
+        <div class="col-sm-6">
+            <h3 class="feature-title">Twitter</h3>
+            <div style="float: left; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto">
+                    <img src='https://static.netify.ai/logos/t/w/i/twitter/icon.ico?v=2' class="img-responsive" style="padding-right: 10px; max-height: 40px" alt='Twitter - Logo'>
+            </div>
+            <div style="padding-right: 20px">
+                <p>
+                    Twitter is an online social networking service that allows users to post 140-character messages to other users and general public.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <pre>
+(\.|^)ads-twitter\.com$
+(\.|^)t\.co$
+(\.|^)twimg\.com$
+(\.|^)twitter\.com$
+(\.|^)twitter\.map\.fastly\.net$
+(\.|^)twttr\.com$
+            </pre>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>If you wanted to blacklist or whitelist Twitter, you can add the <b>regex</b> to Pi-hole by doing the following:</p>
+    <ul class="feature-desc default-ul indent-2">
+        <li>Log into the Pi-hole admin panel</li>
+        <li>Click on <b>Group Management</b> &gt; <b>Domains</b> in the menu</li>
+        <li>Click on the <b>RegEx filter</b> tab</li>
+        <li>Cut and paste the data from this site into the <b>Regular Expression</b> input box</li>
+        <li>Add <b>Twitter</b> to the comment to keep track</li>
+        <li>Click on the <b>Add</b> button for either blacklist or whitelist</li>
+    </ul>
+
+    <p>Here's a screenshot from the Pi-hole admin panel:</p>
+    <p>
+        <img src="images/pihole_app.png" class="img-responsive center-block" style="opacity: 0.6" alt="Pi-hole: Adding Regex" />
+    </p>
+
+
+<!-- ========== END CONTENT ========== -->
+</div>
+<!-- ========== MENU ========== -->
+<div class="col-sm-3 col-sm-pull-9">
+    <h2 class="underline sidebar-menu-title">Popular Categories</h2>
+    <ul class="nav nav-tabs tabs-left">
+        <li role="presentation"><a href="all.html">Everything</a></li>
+        <li role="presentation"><a href="streaming_media.html">Streaming Media</a></li>
+        <li role="presentation"><a href="social_media.html">Social Media</a></li>
+        <li role="presentation"><a href="messaging.html">Messaging</a></li>
+        <li role="presentation"><a href="games.html">Games</a></li>
+    </ul>
+    <br>
+    <h2 class="underline sidebar-menu-title">Other Categories</h2>
+    <ul class="nav nav-tabs tabs-left">
+        <li role="presentation"><a href="advertiser.html">Advertiser</a></li>
+        <li role="presentation"><a href="business.html">Business</a></li>
+        <li role="presentation"><a href="cybersecurity.html">Cybersecurity</a></li>
+        <li role="presentation"><a href="device_iot.html">Device/IoT</a></li>
+        <li role="presentation"><a href="education.html">Eductaion</a></li>
+        <li role="presentation"><a href="entertainment.html">Arts and Entertainment</a></li>
+        <li role="presentation"><a href="file_sharing.html">File Sharing</a></li>
+        <li role="presentation"><a href="financial.html">Financial</a></li>
+        <li role="presentation"><a href="government.html">Government</a></li>
+        <li role="presentation"><a href="mail.html">Mail</a></li>
+        <li role="presentation"><a href="news.html">News</a></li>
+        <li role="presentation"><a href="os_software_updates.html">OS/Software Updates</a></li>
+        <li role="presentation"><a href="portal.html">Portal</a></li>
+        <li role="presentation"><a href="recreation.html">Recreation</a></li>
+        <li role="presentation"><a href="reference.html">Reference</a></li>
+        <li role="presentation"><a href="science.html">Science</a></li>
+        <li role="presentation"><a href="shopping.html">Shopping</a></li>
+        <li role="presentation"><a href="sports.html">Sports</a></li>
+        <li role="presentation"><a href="technology.html">Technology</a></li>
+        <li role="presentation"><a href="voip.html">VoIP</a></li>
+        <li role="presentation"><a href="vpn_and_proxy.html">VPN and Proxy</a></li>
+    </ul>
+
+</div>
+
+<!-- ========== END MENU ========== -->
+
+                </div>
+            </div>
+        </section>
+
+        <div class="affix-bottom"></div>
+    </div>
+
+    <footer class="footer dark-footer" id="footer">
+        <div class="footer-last">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">&copy; 2021 Netify - eGloo</div>
+                    <div class="col-md-6 text-right"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.netify.ai/js/jquery-2.2.4.js?ver=7yBArc6H5qeXaryq"></script>
+    <script src="https://www.netify.ai/js/all.min.js?ver=2021.01.04"></script>
+</body>
+</html>

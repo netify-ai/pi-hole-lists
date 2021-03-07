@@ -1,2 +1,2 @@
-# pi-hole-lists
-Netify application lists for Pi-Hole
+# Netify Application Lists for Pi-hole
+See https://netify-ai.github.io/pi-hole-lists/
