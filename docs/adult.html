@@ -1,0 +1,102 @@
+
+            <!doctype html>
+            <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Netify application lists for Pi-hole - Category: adult">
+
+                <title>Netify Application Lists for Pi-hole: adult</title>
+
+                <link rel="shortcut icon" type="image/ico" sizes="16x16 32x32 48x48 64x64" href="/pi-hole-lists/favicon.ico" />
+                <link rel="icon" type="image/png" sizes="152x152" href="/pi-hole-lists/images/logo-touch.png" />
+                <link rel="stylesheet" href="https://www.netify.ai/css/all.min.css?ver=2021.01.04">
+            </head>
+
+            <body class="header-shadow">
+
+                <!-- ========== LOADER ========== -->
+                <div class="page-loader">
+                    <div class="spinner"></div>
+                </div>
+
+                <!-- ========== HEADER ========== -->
+                <div class="header menu-style-1 ">
+                    <div class="container">
+                        <nav class="menu">
+                            <div class="logo netify-header-container">
+                                <a href="/pi-hole-lists"><img src="https://www.netify.ai/images/netify-dark.svg" alt="Netify" class="logo-img"></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- ========== START MAIN ========== -->
+                <div class="main">
+                    <br><br>
+                    <br><br>
+                    <div class="text-center">
+                        <p>The following are application lists for the <a class="link-external" href="https://pi-hole.net">Pi-hole</a>.<br>
+                        For more information, please visit the <a class="link-internal" href="/pi-hole-lists">home page</a>.</p>
+                    </div>
+                    <h2 class="text-center">Category: Adult</h2>
+
+                    <div style="padding: 50px">
+                        <table id="applications" class="display table table-striped">
+                            <thead>
+                                <tr>
+                                    <th data-priority="1">Application</th>
+                                    <th data-priority="3">Description</th>
+                                    <th data-priority="2" width="30">Pi-hole Regex</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+            
+            <tr>
+                <td>OnlyFans</td>
+                <td>
+                    <div style="float: left; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto">
+                        <img src="https://static.netify.ai/logos/o/n/l/baylsnaf/icon.png?v=1" class="img-responsive" style="padding-right: 10px; max-height: 40px" alt="OnlyFans">
+                    </div>
+                    <div style="padding-right: 20px">
+                        <p>OnlyFans is a British content subscription service allowing content creators to earn money from users who subscribe to their content.  It is popular with sex workers as well as performing artists, fitness experts and anyone posting online regularly.
+                        <a style="font-weight: normal" href="https://www.netify.ai/resources/applications/onlyfans" class="link-internal">More on netify.ai »</a></p>
+                    </div>
+                </td>
+                <td style="width: 40%"><pre style="font-size: 0.8rem">(\.|^)onlyfans\.com$
+</pre></td>
+            </tr>
+                </tbody>
+                </table>
+            </div>
+        <div class="affix-bottom"></div>
+    </div>
+
+    <footer class="footer dark-footer" id="footer">
+        <div class="footer-last">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">&copy; 2021 Netify - eGloo</div>
+                    <div class="col-md-6 text-right"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.netify.ai/js/jquery-2.2.4.js?ver=7yBArc6H5qeXaryq"></script>
+    <script src="https://www.netify.ai/js/all.min.js?ver=2021.01.04"></script>
+    <script>
+        $("#applications").DataTable( {
+            pageLength: 5000,
+            responsive: false,
+            paging: false,
+            info: false,
+            orderFixed: [ 0, "asc" ],
+            order: [[ 0, "asc" ]],
+            renderer: "bootstrap",
+            searching: true,
+        });
+    </script>
+</body>
+        
